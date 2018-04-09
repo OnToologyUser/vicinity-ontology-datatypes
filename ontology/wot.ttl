@@ -1,0 +1,209 @@
+@prefix : <http://iot.linkeddata.es/def/datatypes#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix om18: <http://www.wurvoc.org/vocabularies/om-1.8/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://iot.linkeddata.es/def/datatypes#> a owl:Ontology ;
+	dcterms:creator <http://purl.org/net/mpoveda> , <http://www.garcia-castro.com/foaf.rdf#me> ;
+	vann:preferredNamespaceUri "http://iot.linkeddata.es/def/datatypes" ;
+	owl:versionInfo "0.0.1" ;
+	dcterms:modified "2018-04-09" ;
+	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+	rdfs:comment "This ontology aims to model the datatypes commonly used in the Web of Things domain"@en ;
+	dc:title "Ontology model for datatypes"@en ;
+	dc:publisher <http://www.oeg-upm.net/> ;
+	vann:preferredNamespacePrefix "dt" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/modified
+
+dcterms:modified a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+
+vs:term_status a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://iot.linkeddata.es/def/datatypes#allOf
+
+:allOf a owl:ObjectProperty ;
+	rdfs:domain :JSONSchema ;
+	rdfs:range :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#anyOf
+
+:anyOf a owl:ObjectProperty ;
+	rdfs:domain :JSONSchema ;
+	rdfs:range :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#field
+
+:field a owl:ObjectProperty ;
+	rdfs:domain :Object ;
+	rdfs:range :ObjectField .
+# 
+# http://iot.linkeddata.es/def/datatypes#firstArraryItem
+
+:firstArraryItem a owl:ObjectProperty ;
+	rdfs:domain :Array ;
+	rdfs:range :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#nextArrayItem
+
+:nextArrayItem a owl:ObjectProperty ;
+	rdfs:domain :JSONSchema ;
+	rdfs:range :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#oneOf
+
+:oneOf a owl:ObjectProperty ;
+	rdfs:domain :JSONSchema ;
+	rdfs:range :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#value
+
+:value a owl:ObjectProperty ;
+	rdfs:domain :ObjectField ;
+	rdfs:range :JSONSchema .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://iot.linkeddata.es/def/datatypes#maxItems
+
+:maxItems a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range xsd:integer .
+# 
+# http://iot.linkeddata.es/def/datatypes#minItems
+
+:minItems a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range xsd:integer .
+# 
+# http://iot.linkeddata.es/def/datatypes#required
+
+:required a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range xsd:boolean ;
+	rdfs:label "is required"@en .
+# 
+# http://iot.linkeddata.es/def/datatypes#string
+
+:string a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range xsd:string .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://iot.linkeddata.es/def/datatypes#Array
+
+:Array a owl:Class ;
+	rdfs:subClassOf :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#Boolean
+
+:Boolean a owl:Class ;
+	rdfs:subClassOf :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#JSONSchema
+
+:JSONSchema a owl:Class .
+# 
+# http://iot.linkeddata.es/def/datatypes#Number
+
+:Number a owl:Class ;
+	rdfs:subClassOf :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#Object
+
+:Object a owl:Class ;
+	rdfs:subClassOf :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#ObjectField
+
+:ObjectField a owl:Class .
+# 
+# http://iot.linkeddata.es/def/datatypes#String
+
+:String a owl:Class ;
+	rdfs:subClassOf :JSONSchema .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://iot.linkeddata.es/def/datatypes#false
+
+:false a owl:NamedIndividual , :Boolean .
+# 
+# http://iot.linkeddata.es/def/datatypes#null
+
+:null a owl:NamedIndividual , :JSONSchema .
+# 
+# http://iot.linkeddata.es/def/datatypes#number
+
+:number a owl:NamedIndividual , :Number .
+# 
+# http://iot.linkeddata.es/def/datatypes#string
+
+:string a owl:NamedIndividual , :String .
+# 
+# http://iot.linkeddata.es/def/datatypes#true
+
+:true a owl:NamedIndividual , :Boolean .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+
+:string rdfs:label "string"@en .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
