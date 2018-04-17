@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://iot.linkeddata.es/def/datatypes#"
+     xml:base="http://iot.linkeddata.es/def/datatypes"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://iot.linkeddata.es/def/datatypes#">
+        <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <dc:title xml:lang="en">Ontology model for datatypes</dc:title>
+        <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
+        <terms:creator rdf:resource="http://www.garcia-castro.com/foaf.rdf#me"/>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-04-09</terms:modified>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dt</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iot.linkeddata.es/def/datatypes</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">This ontology aims to model the datatypes commonly used in the Web of Things domain</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#allOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#allOf">
+        <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#anyOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#anyOf">
+        <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#field -->
+
+
+    <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#field">
+        <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#Object"/>
+        <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#ObjectField"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#firstArraryItem -->
+
+
+    <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#firstArraryItem">
+        <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#Array"/>
+        <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#nextArrayItem -->
+
+
+    <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#nextArrayItem">
+        <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#oneOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#oneOf">
+        <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#value -->
+
+
+    <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#value">
+        <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#ObjectField"/>
+        <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#maxItems -->
+
+
+    <owl:DatatypeProperty rdf:about="http://iot.linkeddata.es/def/datatypes#maxItems">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#minItems -->
+
+
+    <owl:DatatypeProperty rdf:about="http://iot.linkeddata.es/def/datatypes#minItems">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#required -->
+
+
+    <owl:DatatypeProperty rdf:about="http://iot.linkeddata.es/def/datatypes#required">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">is required</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#string -->
+
+
+    <owl:DatatypeProperty rdf:about="http://iot.linkeddata.es/def/datatypes#string">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#Array -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#Array">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#Boolean -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#Boolean">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#JSONSchema -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#Number -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#Number">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#Object -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#Object">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#ObjectField -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#ObjectField"/>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#String -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#String">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#false -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#false">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#Boolean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#null -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#null">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#number -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#number">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#Number"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#string -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#string">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#String"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#true -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#true">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#Boolean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://iot.linkeddata.es/def/datatypes#string">
+        <rdfs:label xml:lang="en">string</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
