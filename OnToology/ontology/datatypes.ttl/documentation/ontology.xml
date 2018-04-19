@@ -69,6 +69,7 @@
     <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#allOf">
         <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
         <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:label xml:lang="en">all of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -79,6 +80,7 @@
     <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#anyOf">
         <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
         <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:comment xml:lang="en">any of</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -89,6 +91,7 @@
     <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#field">
         <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#Object"/>
         <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#ObjectField"/>
+        <rdfs:comment xml:lang="en">field</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -99,6 +102,7 @@
     <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#firstArraryItem">
         <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#Array"/>
         <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:comment xml:lang="en">first array item</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -109,6 +113,7 @@
     <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#nextArrayItem">
         <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
         <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:comment xml:lang="en">next array item</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -119,6 +124,7 @@
     <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#oneOf">
         <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
         <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:comment xml:lang="en">one of</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -129,6 +135,7 @@
     <owl:ObjectProperty rdf:about="http://iot.linkeddata.es/def/datatypes#value">
         <rdfs:domain rdf:resource="http://iot.linkeddata.es/def/datatypes#ObjectField"/>
         <rdfs:range rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:comment xml:lang="en">value</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -151,6 +158,7 @@
     <owl:DatatypeProperty rdf:about="http://iot.linkeddata.es/def/datatypes#maxItems">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">max items</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -161,6 +169,7 @@
     <owl:DatatypeProperty rdf:about="http://iot.linkeddata.es/def/datatypes#minItems">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">min items</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -203,6 +212,7 @@
 
     <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#Array">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:label xml:lang="en">array</rdfs:label>
     </owl:Class>
     
 
@@ -212,6 +222,7 @@
 
     <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#Boolean">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:label xml:lang="en">boolean</rdfs:label>
     </owl:Class>
     
 
@@ -219,7 +230,10 @@
     <!-- http://iot.linkeddata.es/def/datatypes#JSONSchema -->
 
 
-    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#JSONSchema">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/wot#DataSchema"/>
+        <rdfs:label xml:lang="en">JSON schema</rdfs:label>
+    </owl:Class>
     
 
 
@@ -228,6 +242,7 @@
 
     <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#Number">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:label xml:lang="en">number</rdfs:label>
     </owl:Class>
     
 
@@ -237,6 +252,7 @@
 
     <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#Object">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:label xml:lang="en">object</rdfs:label>
     </owl:Class>
     
 
@@ -244,7 +260,9 @@
     <!-- http://iot.linkeddata.es/def/datatypes#ObjectField -->
 
 
-    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#ObjectField"/>
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#ObjectField">
+        <rdfs:label xml:lang="en">object field</rdfs:label>
+    </owl:Class>
     
 
 
@@ -253,7 +271,15 @@
 
     <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#String">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:label xml:lang="en">string</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/wot#DataSchema -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/wot#DataSchema"/>
     
 
 
@@ -274,6 +300,7 @@
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#false">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#Boolean"/>
+        <rdfs:label xml:lang="en">false</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -283,6 +310,7 @@
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#null">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#JSONSchema"/>
+        <rdfs:label xml:lang="en">null</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -292,6 +320,7 @@
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#number">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#Number"/>
+        <rdfs:label xml:lang="en">number</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -310,6 +339,7 @@
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#true">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#Boolean"/>
+        <rdfs:label xml:lang="en">true</rdfs:label>
     </owl:NamedIndividual>
     
 
