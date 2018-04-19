@@ -37,43 +37,50 @@
 ###  http://iot.linkeddata.es/def/datatypes#allOf
 <http://iot.linkeddata.es/def/datatypes#allOf> rdf:type owl:ObjectProperty ;
                                                rdfs:domain <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
-                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                               rdfs:label "all of"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#anyOf
 <http://iot.linkeddata.es/def/datatypes#anyOf> rdf:type owl:ObjectProperty ;
                                                rdfs:domain <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
-                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                               rdfs:comment "any of"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#field
 <http://iot.linkeddata.es/def/datatypes#field> rdf:type owl:ObjectProperty ;
                                                rdfs:domain <http://iot.linkeddata.es/def/datatypes#Object> ;
-                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#ObjectField> .
+                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#ObjectField> ;
+                                               rdfs:comment "field"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#firstArraryItem
 <http://iot.linkeddata.es/def/datatypes#firstArraryItem> rdf:type owl:ObjectProperty ;
                                                          rdfs:domain <http://iot.linkeddata.es/def/datatypes#Array> ;
-                                                         rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                                         rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                                         rdfs:comment "first array item"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#nextArrayItem
 <http://iot.linkeddata.es/def/datatypes#nextArrayItem> rdf:type owl:ObjectProperty ;
                                                        rdfs:domain <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
-                                                       rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                                       rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                                       rdfs:comment "next array item"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#oneOf
 <http://iot.linkeddata.es/def/datatypes#oneOf> rdf:type owl:ObjectProperty ;
                                                rdfs:domain <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
-                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                               rdfs:comment "one of"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#value
 <http://iot.linkeddata.es/def/datatypes#value> rdf:type owl:ObjectProperty ;
                                                rdfs:domain <http://iot.linkeddata.es/def/datatypes#ObjectField> ;
-                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                               rdfs:range <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                               rdfs:comment "value"@en .
 
 
 #################################################################
@@ -83,13 +90,15 @@
 ###  http://iot.linkeddata.es/def/datatypes#maxItems
 <http://iot.linkeddata.es/def/datatypes#maxItems> rdf:type owl:DatatypeProperty ,
                                                            owl:FunctionalProperty ;
-                                                  rdfs:range xsd:integer .
+                                                  rdfs:range xsd:integer ;
+                                                  rdfs:label "max items"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#minItems
 <http://iot.linkeddata.es/def/datatypes#minItems> rdf:type owl:DatatypeProperty ,
                                                            owl:FunctionalProperty ;
-                                                  rdfs:range xsd:integer .
+                                                  rdfs:range xsd:integer ;
+                                                  rdfs:label "min items"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#required
@@ -111,35 +120,47 @@
 
 ###  http://iot.linkeddata.es/def/datatypes#Array
 <http://iot.linkeddata.es/def/datatypes#Array> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                               rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                               rdfs:label "array"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#Boolean
 <http://iot.linkeddata.es/def/datatypes#Boolean> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                                 rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                                 rdfs:label "boolean"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#JSONSchema
-<http://iot.linkeddata.es/def/datatypes#JSONSchema> rdf:type owl:Class .
+<http://iot.linkeddata.es/def/datatypes#JSONSchema> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://iot.linkeddata.es/def/wot#DataSchema> ;
+                                                    rdfs:label "JSON schema"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#Number
 <http://iot.linkeddata.es/def/datatypes#Number> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                                rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                                rdfs:label "number"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#Object
 <http://iot.linkeddata.es/def/datatypes#Object> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                                rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                                rdfs:label "object"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#ObjectField
-<http://iot.linkeddata.es/def/datatypes#ObjectField> rdf:type owl:Class .
+<http://iot.linkeddata.es/def/datatypes#ObjectField> rdf:type owl:Class ;
+                                                     rdfs:label "object field"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#String
 <http://iot.linkeddata.es/def/datatypes#String> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                                rdfs:subClassOf <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                                rdfs:label "string"@en .
+
+
+###  http://iot.linkeddata.es/def/wot#DataSchema
+<http://iot.linkeddata.es/def/wot#DataSchema> rdf:type owl:Class .
 
 
 #################################################################
@@ -148,17 +169,20 @@
 
 ###  http://iot.linkeddata.es/def/datatypes#false
 <http://iot.linkeddata.es/def/datatypes#false> rdf:type owl:NamedIndividual ,
-                                                        <http://iot.linkeddata.es/def/datatypes#Boolean> .
+                                                        <http://iot.linkeddata.es/def/datatypes#Boolean> ;
+                                               rdfs:label "false"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#null
 <http://iot.linkeddata.es/def/datatypes#null> rdf:type owl:NamedIndividual ,
-                                                       <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+                                                       <http://iot.linkeddata.es/def/datatypes#JSONSchema> ;
+                                              rdfs:label "null"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#number
 <http://iot.linkeddata.es/def/datatypes#number> rdf:type owl:NamedIndividual ,
-                                                         <http://iot.linkeddata.es/def/datatypes#Number> .
+                                                         <http://iot.linkeddata.es/def/datatypes#Number> ;
+                                                rdfs:label "number"@en .
 
 
 ###  http://iot.linkeddata.es/def/datatypes#string
@@ -168,7 +192,8 @@
 
 ###  http://iot.linkeddata.es/def/datatypes#true
 <http://iot.linkeddata.es/def/datatypes#true> rdf:type owl:NamedIndividual ,
-                                                       <http://iot.linkeddata.es/def/datatypes#Boolean> .
+                                                       <http://iot.linkeddata.es/def/datatypes#Boolean> ;
+                                              rdfs:label "true"@en .
 
 
 #################################################################

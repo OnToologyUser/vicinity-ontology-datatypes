@@ -37,36 +37,43 @@
 <http://iot.linkeddata.es/def/datatypes#allOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://iot.linkeddata.es/def/datatypes#allOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
 <http://iot.linkeddata.es/def/datatypes#allOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#allOf> <http://www.w3.org/2000/01/rdf-schema#label> "all of"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#anyOf
 <http://iot.linkeddata.es/def/datatypes#anyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://iot.linkeddata.es/def/datatypes#anyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
 <http://iot.linkeddata.es/def/datatypes#anyOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#anyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "any of"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#field
 <http://iot.linkeddata.es/def/datatypes#field> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://iot.linkeddata.es/def/datatypes#field> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iot.linkeddata.es/def/datatypes#Object> .
 <http://iot.linkeddata.es/def/datatypes#field> <http://www.w3.org/2000/01/rdf-schema#range> <http://iot.linkeddata.es/def/datatypes#ObjectField> .
+<http://iot.linkeddata.es/def/datatypes#field> <http://www.w3.org/2000/01/rdf-schema#comment> "field"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#firstArraryItem
 <http://iot.linkeddata.es/def/datatypes#firstArraryItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://iot.linkeddata.es/def/datatypes#firstArraryItem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iot.linkeddata.es/def/datatypes#Array> .
 <http://iot.linkeddata.es/def/datatypes#firstArraryItem> <http://www.w3.org/2000/01/rdf-schema#range> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#firstArraryItem> <http://www.w3.org/2000/01/rdf-schema#comment> "first array item"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#nextArrayItem
 <http://iot.linkeddata.es/def/datatypes#nextArrayItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://iot.linkeddata.es/def/datatypes#nextArrayItem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
 <http://iot.linkeddata.es/def/datatypes#nextArrayItem> <http://www.w3.org/2000/01/rdf-schema#range> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#nextArrayItem> <http://www.w3.org/2000/01/rdf-schema#comment> "next array item"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#oneOf
 <http://iot.linkeddata.es/def/datatypes#oneOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://iot.linkeddata.es/def/datatypes#oneOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
 <http://iot.linkeddata.es/def/datatypes#oneOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#oneOf> <http://www.w3.org/2000/01/rdf-schema#comment> "one of"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#value
 <http://iot.linkeddata.es/def/datatypes#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://iot.linkeddata.es/def/datatypes#value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iot.linkeddata.es/def/datatypes#ObjectField> .
 <http://iot.linkeddata.es/def/datatypes#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#value> <http://www.w3.org/2000/01/rdf-schema#comment> "value"@en .
 # 
 # 
 # 
@@ -81,11 +88,13 @@
 <http://iot.linkeddata.es/def/datatypes#maxItems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://iot.linkeddata.es/def/datatypes#maxItems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://iot.linkeddata.es/def/datatypes#maxItems> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://iot.linkeddata.es/def/datatypes#maxItems> <http://www.w3.org/2000/01/rdf-schema#label> "max items"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#minItems
 <http://iot.linkeddata.es/def/datatypes#minItems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://iot.linkeddata.es/def/datatypes#minItems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://iot.linkeddata.es/def/datatypes#minItems> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://iot.linkeddata.es/def/datatypes#minItems> <http://www.w3.org/2000/01/rdf-schema#label> "min items"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#required
 <http://iot.linkeddata.es/def/datatypes#required> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -110,28 +119,39 @@
 # http://iot.linkeddata.es/def/datatypes#Array
 <http://iot.linkeddata.es/def/datatypes#Array> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/datatypes#Array> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#Array> <http://www.w3.org/2000/01/rdf-schema#label> "array"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#Boolean
 <http://iot.linkeddata.es/def/datatypes#Boolean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/datatypes#Boolean> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#Boolean> <http://www.w3.org/2000/01/rdf-schema#label> "boolean"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#JSONSchema
 <http://iot.linkeddata.es/def/datatypes#JSONSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/datatypes#JSONSchema> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/wot#DataSchema> .
+<http://iot.linkeddata.es/def/datatypes#JSONSchema> <http://www.w3.org/2000/01/rdf-schema#label> "JSON schema"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#Number
 <http://iot.linkeddata.es/def/datatypes#Number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/datatypes#Number> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#Number> <http://www.w3.org/2000/01/rdf-schema#label> "number"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#Object
 <http://iot.linkeddata.es/def/datatypes#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/datatypes#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#Object> <http://www.w3.org/2000/01/rdf-schema#label> "object"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#ObjectField
 <http://iot.linkeddata.es/def/datatypes#ObjectField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/datatypes#ObjectField> <http://www.w3.org/2000/01/rdf-schema#label> "object field"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#String
 <http://iot.linkeddata.es/def/datatypes#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/datatypes#String> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#String> <http://www.w3.org/2000/01/rdf-schema#label> "string"@en .
+# 
+# http://iot.linkeddata.es/def/wot#DataSchema
+<http://iot.linkeddata.es/def/wot#DataSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -145,14 +165,17 @@
 # http://iot.linkeddata.es/def/datatypes#false
 <http://iot.linkeddata.es/def/datatypes#false> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/datatypes#false> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/datatypes#Boolean> .
+<http://iot.linkeddata.es/def/datatypes#false> <http://www.w3.org/2000/01/rdf-schema#label> "false"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#null
 <http://iot.linkeddata.es/def/datatypes#null> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/datatypes#null> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
+<http://iot.linkeddata.es/def/datatypes#null> <http://www.w3.org/2000/01/rdf-schema#label> "null"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#number
 <http://iot.linkeddata.es/def/datatypes#number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/datatypes#number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/datatypes#Number> .
+<http://iot.linkeddata.es/def/datatypes#number> <http://www.w3.org/2000/01/rdf-schema#label> "number"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#string
 <http://iot.linkeddata.es/def/datatypes#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -161,6 +184,7 @@
 # http://iot.linkeddata.es/def/datatypes#true
 <http://iot.linkeddata.es/def/datatypes#true> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/datatypes#true> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/datatypes#Boolean> .
+<http://iot.linkeddata.es/def/datatypes#true> <http://www.w3.org/2000/01/rdf-schema#label> "true"@en .
 # 
 # 
 # 
