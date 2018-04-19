@@ -55,43 +55,50 @@ vs:term_status a owl:AnnotationProperty .
 
 :allOf a owl:ObjectProperty ;
 	rdfs:domain :JSONSchema ;
-	rdfs:range :JSONSchema .
+	rdfs:range :JSONSchema ;
+	rdfs:label "all of"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#anyOf
 
 :anyOf a owl:ObjectProperty ;
 	rdfs:domain :JSONSchema ;
-	rdfs:range :JSONSchema .
+	rdfs:range :JSONSchema ;
+	rdfs:comment "any of"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#field
 
 :field a owl:ObjectProperty ;
 	rdfs:domain :Object ;
-	rdfs:range :ObjectField .
+	rdfs:range :ObjectField ;
+	rdfs:comment "field"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#firstArraryItem
 
 :firstArraryItem a owl:ObjectProperty ;
 	rdfs:domain :Array ;
-	rdfs:range :JSONSchema .
+	rdfs:range :JSONSchema ;
+	rdfs:comment "first array item"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#nextArrayItem
 
 :nextArrayItem a owl:ObjectProperty ;
 	rdfs:domain :JSONSchema ;
-	rdfs:range :JSONSchema .
+	rdfs:range :JSONSchema ;
+	rdfs:comment "next array item"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#oneOf
 
 :oneOf a owl:ObjectProperty ;
 	rdfs:domain :JSONSchema ;
-	rdfs:range :JSONSchema .
+	rdfs:range :JSONSchema ;
+	rdfs:comment "one of"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#value
 
 :value a owl:ObjectProperty ;
 	rdfs:domain :ObjectField ;
-	rdfs:range :JSONSchema .
+	rdfs:range :JSONSchema ;
+	rdfs:comment "value"@en .
 # 
 # 
 # 
@@ -105,12 +112,14 @@ vs:term_status a owl:AnnotationProperty .
 # http://iot.linkeddata.es/def/datatypes#maxItems
 
 :maxItems a owl:DatatypeProperty , owl:FunctionalProperty ;
-	rdfs:range xsd:integer .
+	rdfs:range xsd:integer ;
+	rdfs:label "max items"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#minItems
 
 :minItems a owl:DatatypeProperty , owl:FunctionalProperty ;
-	rdfs:range xsd:integer .
+	rdfs:range xsd:integer ;
+	rdfs:label "min items"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#required
 
@@ -135,35 +144,47 @@ vs:term_status a owl:AnnotationProperty .
 # http://iot.linkeddata.es/def/datatypes#Array
 
 :Array a owl:Class ;
-	rdfs:subClassOf :JSONSchema .
+	rdfs:subClassOf :JSONSchema ;
+	rdfs:label "array"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#Boolean
 
 :Boolean a owl:Class ;
-	rdfs:subClassOf :JSONSchema .
+	rdfs:subClassOf :JSONSchema ;
+	rdfs:label "boolean"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#JSONSchema
 
-:JSONSchema a owl:Class .
+:JSONSchema a owl:Class ;
+	rdfs:subClassOf <http://iot.linkeddata.es/def/wot#DataSchema> ;
+	rdfs:label "JSON schema"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#Number
 
 :Number a owl:Class ;
-	rdfs:subClassOf :JSONSchema .
+	rdfs:subClassOf :JSONSchema ;
+	rdfs:label "number"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#Object
 
 :Object a owl:Class ;
-	rdfs:subClassOf :JSONSchema .
+	rdfs:subClassOf :JSONSchema ;
+	rdfs:label "object"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#ObjectField
 
-:ObjectField a owl:Class .
+:ObjectField a owl:Class ;
+	rdfs:label "object field"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#String
 
 :String a owl:Class ;
-	rdfs:subClassOf :JSONSchema .
+	rdfs:subClassOf :JSONSchema ;
+	rdfs:label "string"@en .
+# 
+# http://iot.linkeddata.es/def/wot#DataSchema
+
+<http://iot.linkeddata.es/def/wot#DataSchema> a owl:Class .
 # 
 # 
 # 
@@ -176,15 +197,18 @@ vs:term_status a owl:AnnotationProperty .
 # 
 # http://iot.linkeddata.es/def/datatypes#false
 
-:false a owl:NamedIndividual , :Boolean .
+:false a owl:NamedIndividual , :Boolean ;
+	rdfs:label "false"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#null
 
-:null a owl:NamedIndividual , :JSONSchema .
+:null a owl:NamedIndividual , :JSONSchema ;
+	rdfs:label "null"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#number
 
-:number a owl:NamedIndividual , :Number .
+:number a owl:NamedIndividual , :Number ;
+	rdfs:label "number"@en .
 # 
 # http://iot.linkeddata.es/def/datatypes#string
 
@@ -192,7 +216,8 @@ vs:term_status a owl:AnnotationProperty .
 # 
 # http://iot.linkeddata.es/def/datatypes#true
 
-:true a owl:NamedIndividual , :Boolean .
+:true a owl:NamedIndividual , :Boolean ;
+	rdfs:label "true"@en .
 # 
 # 
 # 

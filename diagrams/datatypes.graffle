@@ -14,7 +14,7 @@
 	<key>BackgroundGraphic</key>
 	<dict>
 		<key>Bounds</key>
-		<string>{{0, 0}, {1307, 897}}</string>
+		<string>{{0, 0}, {1221, 995.39529675251958}}</string>
 		<key>Class</key>
 		<string>SolidGraphic</string>
 		<key>ID</key>
@@ -33,7 +33,7 @@
 	<key>CanvasOrigin</key>
 	<string>{0, 0}</string>
 	<key>CanvasSize</key>
-	<string>{1307, 897}</string>
+	<string>{1221, 995.39529675251958}</string>
 	<key>ColumnAlign</key>
 	<integer>1</integer>
 	<key>ColumnSpacing</key>
@@ -152,7 +152,7 @@ Falta valor maximo y m\'ednimo}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{625.6799860149622, 229.9532514873008}, {299.51999330520619, 193.67999567091465}}</string>
+			<string>{{901.43997985124588, 229.9532514873008}, {299.51999330520619, 193.67999567091465}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FontInfo</key>
@@ -4647,9 +4647,8 @@ Class}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Legend:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\b0 \cf2 \
+\b0 \
 \
 }</string>
 			</dict>
@@ -4709,7 +4708,7 @@ Class}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2018-04-09 14:43:42 +0000</string>
+	<string>2018-04-19 14:40:18 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -4781,7 +4780,7 @@ Class}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>BottomSlabHeight</key>
-		<real>389</real>
+		<real>220</real>
 		<key>CurrentSheet</key>
 		<integer>0</integer>
 		<key>Expanded_Canvases</key>
@@ -4789,7 +4788,7 @@ Class}</string>
 		<key>FitInWindow</key>
 		<true/>
 		<key>Frame</key>
-		<string>{{66, 7}, {1854, 1042}}</string>
+		<string>{{161, 184}, {1440, 873}}</string>
 		<key>ShowInfo</key>
 		<true/>
 		<key>ShowRuler</key>
@@ -4799,9 +4798,9 @@ Class}</string>
 		<key>SidebarWidth</key>
 		<integer>230</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {1307, 897}}</string>
+		<string>{{0, 0}, {1221, 995.39529675251947}}</string>
 		<key>Zoom</key>
-		<real>1</real>
+		<real>0.73136773136773137</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
