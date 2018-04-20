@@ -159,6 +159,14 @@
                                                 rdfs:label "string"@en .
 
 
+###  http://iot.linkeddata.es/def/datatypes#XSDDatatype
+<http://iot.linkeddata.es/def/datatypes#XSDDatatype> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://iot.linkeddata.es/def/wot#DataSchema> ;
+                                                     rdfs:comment "Datatypes needed for VICINITY taken form XML Schema ârt 2: Datatypes Second Edition"@en ;
+                                                     rdfs:label "XSD Datatypes"@en ;
+                                                     rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/"^^xsd:string .
+
+
 ###  http://iot.linkeddata.es/def/wot#DataSchema
 <http://iot.linkeddata.es/def/wot#DataSchema> rdf:type owl:Class .
 
@@ -194,6 +202,20 @@
 <http://iot.linkeddata.es/def/datatypes#true> rdf:type owl:NamedIndividual ,
                                                        <http://iot.linkeddata.es/def/datatypes#Boolean> ;
                                               rdfs:label "true"@en .
+
+
+###  http://iot.linkeddata.es/def/datatypes#xsd_float
+<http://iot.linkeddata.es/def/datatypes#xsd_float> rdf:type owl:NamedIndividual ,
+                                                            <http://iot.linkeddata.es/def/datatypes#XSDDatatype> ;
+                                                   rdfs:label "float"@en ;
+                                                   rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/#float"^^xsd:string .
+
+
+###  http://iot.linkeddata.es/def/datatypes#xsd_integer
+<http://iot.linkeddata.es/def/datatypes#xsd_integer> rdf:type owl:NamedIndividual ,
+                                                              <http://iot.linkeddata.es/def/datatypes#XSDDatatype> ;
+                                                     rdfs:label "integer"@en ;
+                                                     rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/#integer"^^xsd:string .
 
 
 #################################################################

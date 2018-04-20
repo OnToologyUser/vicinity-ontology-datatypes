@@ -276,6 +276,18 @@
     
 
 
+    <!-- http://iot.linkeddata.es/def/datatypes#XSDDatatype -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/datatypes#XSDDatatype">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/wot#DataSchema"/>
+        <rdfs:comment xml:lang="en">Datatypes needed for VICINITY taken form XML Schema ârt 2: Datatypes Second Edition</rdfs:comment>
+        <rdfs:label xml:lang="en">XSD Datatypes</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/xmlschema-2/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://iot.linkeddata.es/def/wot#DataSchema -->
 
 
@@ -340,6 +352,28 @@
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#true">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#Boolean"/>
         <rdfs:label xml:lang="en">true</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#xsd_float -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#xsd_float">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#XSDDatatype"/>
+        <rdfs:label xml:lang="en">float</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/xmlschema-2/#float</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/datatypes#xsd_integer -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/datatypes#xsd_integer">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/datatypes#XSDDatatype"/>
+        <rdfs:label xml:lang="en">integer</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/xmlschema-2/#integer</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
