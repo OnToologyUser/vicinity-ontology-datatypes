@@ -150,6 +150,13 @@
 <http://iot.linkeddata.es/def/datatypes#String> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/datatypes#JSONSchema> .
 <http://iot.linkeddata.es/def/datatypes#String> <http://www.w3.org/2000/01/rdf-schema#label> "string"@en .
 # 
+# http://iot.linkeddata.es/def/datatypes#XSDDatatype
+<http://iot.linkeddata.es/def/datatypes#XSDDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/datatypes#XSDDatatype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/wot#DataSchema> .
+<http://iot.linkeddata.es/def/datatypes#XSDDatatype> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatypes needed for VICINITY taken form XML Schema \u00E2rt 2: Datatypes Second Edition"@en .
+<http://iot.linkeddata.es/def/datatypes#XSDDatatype> <http://www.w3.org/2000/01/rdf-schema#label> "XSD Datatypes"@en .
+<http://iot.linkeddata.es/def/datatypes#XSDDatatype> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.w3.org/TR/xmlschema-2/" .
+# 
 # http://iot.linkeddata.es/def/wot#DataSchema
 <http://iot.linkeddata.es/def/wot#DataSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -185,6 +192,18 @@
 <http://iot.linkeddata.es/def/datatypes#true> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/datatypes#true> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/datatypes#Boolean> .
 <http://iot.linkeddata.es/def/datatypes#true> <http://www.w3.org/2000/01/rdf-schema#label> "true"@en .
+# 
+# http://iot.linkeddata.es/def/datatypes#xsd_float
+<http://iot.linkeddata.es/def/datatypes#xsd_float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/datatypes#xsd_float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/datatypes#XSDDatatype> .
+<http://iot.linkeddata.es/def/datatypes#xsd_float> <http://www.w3.org/2000/01/rdf-schema#label> "float"@en .
+<http://iot.linkeddata.es/def/datatypes#xsd_float> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.w3.org/TR/xmlschema-2/#float" .
+# 
+# http://iot.linkeddata.es/def/datatypes#xsd_integer
+<http://iot.linkeddata.es/def/datatypes#xsd_integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/datatypes#xsd_integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/datatypes#XSDDatatype> .
+<http://iot.linkeddata.es/def/datatypes#xsd_integer> <http://www.w3.org/2000/01/rdf-schema#label> "integer"@en .
+<http://iot.linkeddata.es/def/datatypes#xsd_integer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.w3.org/TR/xmlschema-2/#integer" .
 # 
 # 
 # 
