@@ -182,6 +182,14 @@ vs:term_status a owl:AnnotationProperty .
 	rdfs:subClassOf :JSONSchema ;
 	rdfs:label "string"@en .
 # 
+# http://iot.linkeddata.es/def/datatypes#XSDDatatype
+
+:XSDDatatype a owl:Class ;
+	rdfs:subClassOf <http://iot.linkeddata.es/def/wot#DataSchema> ;
+	rdfs:comment "Datatypes needed for VICINITY taken form XML Schema ârt 2: Datatypes Second Edition"@en ;
+	rdfs:label "XSD Datatypes"@en ;
+	rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/" .
+# 
 # http://iot.linkeddata.es/def/wot#DataSchema
 
 <http://iot.linkeddata.es/def/wot#DataSchema> a owl:Class .
@@ -218,6 +226,18 @@ vs:term_status a owl:AnnotationProperty .
 
 :true a owl:NamedIndividual , :Boolean ;
 	rdfs:label "true"@en .
+# 
+# http://iot.linkeddata.es/def/datatypes#xsd_float
+
+:xsd_float a owl:NamedIndividual , :XSDDatatype ;
+	rdfs:label "float"@en ;
+	rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/#float" .
+# 
+# http://iot.linkeddata.es/def/datatypes#xsd_integer
+
+:xsd_integer a owl:NamedIndividual , :XSDDatatype ;
+	rdfs:label "integer"@en ;
+	rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/#integer" .
 # 
 # 
 # 
